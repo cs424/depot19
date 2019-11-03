@@ -10,6 +10,8 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= content_tag :main, class: controller.controller_name do %>
+      <%= yield %>
+    <% end %>
   </body>
 </html>
